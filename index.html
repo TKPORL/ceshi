@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tsinho - 个人主页</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Tsinho</div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">首页</a></li>
+            <li><a href="portfolio.html">作品集</a></li>
+            <li><a href="about.html">关于</a></li>
+            <li><a href="contact.html">联系</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <main class="hero">
+        <div class="hero-content">
+            <h1 class="glitch" data-text="欢迎来到我的世界">欢迎来到我的世界</h1>
+            <p class="subtitle">探索 · 创造 · 分享</p>
+            <div class="cta-buttons">
+                <a href="portfolio.html" class="btn btn-primary">查看作品</a>
+                <a href="contact.html" class="btn btn-secondary">联系我</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>向下滚动</span>
+            <div class="mouse"></div>
+        </div>
+    </main>
+
+    <section class="features">
+        <div class="container">
+            <h2>探索更多</h2>
+            <div class="feature-grid">
+                <div class="feature-card" onclick="navigateTo('portfolio.html')">
+                    <div class="feature-icon">💼</div>
+                    <h3>作品集</h3>
+                    <p>查看我的项目作品和创意作品</p>
+                </div>
+                <div class="feature-card" onclick="navigateTo('about.html')">
+                    <div class="feature-icon">👤</div>
+                    <h3>关于我</h3>
+                    <p>了解更多关于我的背景和技能</p>
+                </div>
+                <div class="feature-card" onclick="navigateTo('contact.html')">
+                    <div class="feature-icon">✉️</div>
+                    <h3>联系方式</h3>
+                    <p>通过邮件与我取得联系</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Tsinho. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://link3.cc/xakjyxgs" target="_blank" class="social-link">官网</a>
+                <a href="mailto:TKPORL@outlook.com" class="social-link">邮箱</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

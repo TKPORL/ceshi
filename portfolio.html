@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>作品集 - Tsinho</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Tsinho</div>
+        <ul class="nav-links">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="portfolio.html" class="active">作品集</a></li>
+            <li><a href="about.html">关于</a></li>
+            <li><a href="contact.html">联系</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <main class="page-header">
+        <h1>我的作品集</h1>
+        <p>记录每一次创意与突破</p>
+    </main>
+
+    <section class="portfolio">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">全部</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="app">App</button>
+                <button class="filter-btn" data-filter="design">设计</button>
+            </div>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-image">
+                        <div class="placeholder-img">🌐</div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Web 项目一</h3>
+                        <p>现代化响应式网站设计</p>
+                        <button class="btn-view" onclick="openModal(1)">查看详情</button>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="app">
+                    <div class="portfolio-image">
+                        <div class="placeholder-img">📱</div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>移动应用</h3>
+                        <p>跨平台移动应用开发</p>
+                        <button class="btn-view" onclick="openModal(2)">查看详情</button>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="design">
+                    <div class="portfolio-image">
+                        <div class="placeholder-img">🎨</div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>品牌设计</h3>
+                        <p>企业品牌形象设计</p>
+                        <button class="btn-view" onclick="openModal(3)">查看详情</button>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-image">
+                        <div class="placeholder-img">🚀</div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Web 项目二</h3>
+                        <p>电商平台开发</p>
+                        <button class="btn-view" onclick="openModal(4)">查看详情</button>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="app">
+                    <div class="portfolio-image">
+                        <div class="placeholder-img">⚡</div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>小程序开发</h3>
+                        <p>微信小程序定制开发</p>
+                        <button class="btn-view" onclick="openModal(5)">查看详情</button>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="design">
+                    <div class="portfolio-image">
+                        <div class="placeholder-img">📐</div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>UI/UX 设计</h3>
+                        <p>用户体验设计项目</p>
+                        <button class="btn-view" onclick="openModal(6)">查看详情</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal" id="projectModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 id="modalTitle">项目标题</h2>
+            <p id="modalDescription">项目描述内容</p>
+            <div class="modal-tags">
+                <span class="tag">Web</span>
+                <span class="tag">2024</span>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Tsinho. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://link3.cc/xakjyxgs" target="_blank" class="social-link">官网</a>
+                <a href="mailto:TKPORL@outlook.com" class="social-link">邮箱</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
