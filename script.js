@@ -28,6 +28,11 @@ const projectData = {
         title: 'UI/UX 设计',
         description: '专注用户体验的UI/UX设计项目，通过用户研究和交互设计，提升产品的可用性和用户满意度。',
         tags: ['Design', '2023', 'UX']
+    },
+    7: {
+        title: 'UI/UX Pro Max',
+        description: '顶级UI/UX设计项目，融合前沿设计理念与极致用户体验，打造令人惊叹的数字产品。',
+        tags: ['UI/UX Pro Max', '2024', 'Pro Max']
     }
 };
 
